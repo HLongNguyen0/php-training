@@ -1,1 +1,1 @@
-# php-training
+# PHP Training
