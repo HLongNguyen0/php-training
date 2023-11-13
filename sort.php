@@ -9,15 +9,15 @@ if ($file) {
 
 for ($i = 0; $i < count($array) - 1; $i++) {
     for ($j = $i + 1; $j < count($array); $j++) {
-        if(preg_match('/[\'^£$%&*()}{@#~?!><>,|=_+¬-]/', $array[$j])) {
+        if(preg_match("/['^£$%&*()}{@#~?!><>,|=_+¬-]/", $array[$j])) {
             $temp = $array[$i];
             $array[$i] = $array[$j];
             $array[$j] = $temp;
-        } elseif(!preg_match('/[\'^£$%&*()}{@#~?!><>,|=_+¬-]/', $array[$i]) && is_numeric($array[$j]) && $array[$j] < $array[$i]) {
+        } elseif(is_numeric($array[$j]) && $array[$j] < $array[$i]) {
             $temp = $array[$i];
             $array[$i] = $array[$j];
             $array[$j] = $temp;
-        } elseif(!preg_match('/[\'^£$%&*()}{@#~?!><>,|=_+¬-]/', $array[$i]) && !is_numeric($array[$i]) && ord(strtoupper($array[$i])) > ord(strtoupper($array[$j]))) {
+        } elseif(ord(strtoupper($array[$i])) > ord(strtoupper($array[$j]))) {
             $temp = $array[$i];
             $array[$i] = $array[$j];
             $array[$j] = $temp;
@@ -28,9 +28,9 @@ for ($i = 0; $i < count($array) - 1; $i++) {
                     $array[$i - 1] = $temp;
                 }
             }
-
         }
     }
+
     for ($j = $i; $j > 0; $j--) { 
         if(ord($array[$j - 1]) == ord($array[$j])) {
             caseSameLetters($array[$j], $array[$j - 1], 0);
