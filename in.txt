@@ -1,0 +1,12 @@
+2
+aBc
+BcA
+1
+cAb
+AbC
+3
+bCa
+CaB
+?
+aBc
+!
