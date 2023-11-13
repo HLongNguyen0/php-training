@@ -26,10 +26,14 @@ for ($i = 0; $i < count($array) - 1; $i++) {
                     $temp = $array[$i];
                     $array[$i] = $array[$i - 1];
                     $array[$i - 1] = $temp;
-                } elseif(ord($array[$i]) == ord($array[$i - 1])) {
-                    caseSameLetters($array[$i], $array[$i - 1], 0);
                 }
             }
+
+        }
+    }
+    for ($j = $i; $j > 0; $j--) { 
+        if(ord($array[$j - 1]) == ord($array[$j])) {
+            caseSameLetters($array[$j], $array[$j - 1], 0);
         }
     }
 }

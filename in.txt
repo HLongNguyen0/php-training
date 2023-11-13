@@ -3,10 +3,12 @@ aBc
 BcA
 1
 cAb
-AbC
 3
 bCa
 CaB
 ?
-aBc
+AbC
+aBcb
 !
+aBca
+aBc
