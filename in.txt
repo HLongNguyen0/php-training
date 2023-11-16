@@ -1,23 +1,21 @@
-2
-aBc1
-BcA
-
-acD
+ABcb
+aCd
 ?
-bc a
-1
+acD
 aBcc
-3
-bCa
- AbC
-!
-
 <
 acda
-ABcb
-aBca
+3
+bCa
 Bc b
-|
-aCd
-bc
+2
 bCb
+1
+aBca
+bc
+!
+BcA
+bc a
+ AbC
+|
+aBc1
